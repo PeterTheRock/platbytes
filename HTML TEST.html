@@ -1,65 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To PlatByte</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Platbytes</title>
 </head>
+<body style="background-color:dodgerblue;">
+    <h1 style="color:white; text-align:center;">PLATBYTES </h1>
+    <h1>This is currently an information based website </h1>
+    <h1 style="display:inline;" >This website is currently managed by </h1><h1 style="display:inline; color:orange;">Peter Hendricks</h1>
+    <br>
+    <h1 style="display:inline;">and</h1> <h1 style="color:tomato; display:inline;">Nikolai Koning<h1/>
+    <h2>Welcome to Platbytes Community Forums for all the information you will ever need</h2>
+    <p>You can learn about the following topics</p>
+    <ul style="text-align:center;">
+       <a href="southAfricanHeritage.php"><li>South African Heritage</li></a>
+       <a href="capeTown.php"><li>Cape Town Information</li></a>
+       <a href="postComment.php"><li>Comment Section</li></a>
+    </ul>
+  <p id="demo">Welcome to Platbytes this Is just a small Snippet of java-script</p>
 
-<body>
-    <div class="Headingtag">
-        <h1>
-            PLATBYTE
-        </h1>
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "black";        
+}
+</script>
+<button type="button" onclick="myFunction()">Click Me to highlight the above statement !</button>
+<br>
+<button type="button"
+onclick="document.getElementById('date').innerHTML = Date()">
+ Display Date and Time.</button>
 
-    </div>
-    <div class="usernameandpassword">
-        <p>UserName:
-            <input type="text" name="username" size="15" maxlength="20" />
-        </p>
-    </div>
-    <div class="passcode">
-        <p>Password:
-            <input type="text" name="password" size="15" maxlength="20">
-        </p>
-    </div>
-    <div class="platbytewelcome">
-        <p>Welcome to PlatByte</p>
-    </div>
-    <div class="introduction">
-        <p>
-            Welcome to platbye this platform was built with the user experience in mind, we aim to keep the site up and running forever as we expand so will our user experience, this website was created by -Peter Hendricks
-        </p>
-    </div>
-    <div class="uolist">
-        <ul>
-            PLATBYTE
-        </ul>
-    </div>
-    <div class="topusername">
-        THIS IS THE TOP USERNAME
-    </div>
-
-    <div class="maintableofcontents">
-        <table>
-            <th style="color: aqua;">
-                Technology
-            </th>
-            <th>
-                Nutrition
-            </th>
-        </table>
-    </div>
-    <div class="topusersblock">
-        <h2>
-            Topusernames
-        </h2>
-    </div>
-    <footer>Copyright Peter Hendricks 2024</footer>
+<p id="date"></p>
 
 </body>
-
 </html>
