@@ -38,5 +38,27 @@ onclick="document.getElementById('date').innerHTML = Date()">
 
 <p id="date"></p>
 
+<h1>Historical Pictures of Cape Town</h1>
+<p>You can switch between the two images below </p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "cape-town1950.jpg"
+  } else {
+    pic = "cape-town2022.jpg"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="cape-town2022.jpg" width="350" height="250">
+
+<p>
+    <br>
+<button type="button" onclick="light(1)">Cape Town 2022</button>
+<button type="button" onclick="light(0)">Cape Town 1950</button>
+</p>
 </body>
 </html>
